@@ -27,4 +27,13 @@ func main() {
 
 	slice2 := array2[1:3]
 	fmt.Println(slice2)
+
+	//Arrays internos
+	//make ela cria um array de 10 mas so me mostra as 8 posicoes
+	//isso e um array interno
+	//quando o slice estourar a capacidade o go vai dobrar o array dele
+	slice3 := make([]int, 8, 10)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3))
+	fmt.Println(cap(slice3))
 }
