@@ -101,7 +101,7 @@ func main() {
 	//Funcoes Anonimas
 	//Uma funcao anonima, ela funciona assim e com () eu a declaro e uso
 	retorno := func(texto string) string {
-		return fmt.Sprintf("Recebido ->", texto, 10)
+		return texto
 	}("Passando Parametro")
 
 	fmt.Println(retorno)
